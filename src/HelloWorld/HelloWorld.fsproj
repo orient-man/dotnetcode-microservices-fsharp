@@ -10,16 +10,12 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
     <PackageReference Include="Microsoft.FSharp.Core.netcore" Version="1.0.0-alpha-161023" />
-    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.0-beta-*">
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <DotNetCliToolReference Include="dotnet-compile-fsc">
-      <Version>1.0.0-preview2-020000</Version>
-    </DotNetCliToolReference>
+    <!--
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+    -->
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.0-beta-060000" PrivateAssets="All" />
+    <DotNetCliToolReference Include="dotnet-compile-fsc" Version="1.0.0-preview2-020000" />
   </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

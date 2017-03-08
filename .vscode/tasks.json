@@ -2,13 +2,13 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "dotnet",
+    "command": "\"packages/FAKE/tools/FAKE.exe\"",
     "isShellCommand": true,
     "args": [],
     "tasks": [
         {
             "taskName": "build",
-            "args": ["src/HelloWorld/HelloWorld.fsproj"],
+            "args": ["build.fsx"],
             "isBuildCommand": true,
             "showOutput": "silent",
             "problemMatcher": "$msCompile"
